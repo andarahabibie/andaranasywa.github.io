@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andara Nasywa Habibie - Portfolio & CV</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #d1828f; 
+            --bg-color: #fcf9f9; 
+            --text-main: #5c4d4f; 
+            --text-light: #8c7a7d;
+            --white: #ffffff;
+            --border-light: #f2e3e5;
+            --btn-formal: #8c7a7d;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            padding: 40px 20px;
+            line-height: 1.7;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: var(--white);
+            padding: 60px;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(209, 130, 143, 0.08);
+        }
+
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+
+        .header {
+            text-align: center;
+            border-bottom: 2px solid var(--border-light);
+            padding-bottom: 40px;
+            margin-bottom: 40px;
+        }
+
+        .header h1 {
+            font-size: 2.8em;
+            margin: 0 0 10px 0;
+            letter-spacing: 1px;
+        }
+
+        .header p {
+            font-size: 1.1em;
+            color: var(--text-light);
+            margin: 0;
+            font-weight: 300;
+            font-style: italic;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section h2 {
+            font-size: 1.8em;
+            border-bottom: 1px solid var(--border-light);
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+
+        .about-text {
+            text-align: justify;
+        }
+
+        .skills-grid {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .skill-box {
+            background: #fffafa;
+            border: 1px solid var(--border-light);
+            padding: 25px;
+            border-radius: 15px;
+            flex: 1;
+            min-width: 250px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center;
+        }
+
+        .skill-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(209, 130, 143, 0.15);
+        }
+
+        .skill-box i {
+            color: var(--primary-color);
+            font-size: 2em;
+            margin-bottom: 15px;
+        }
+
+        ul.elegant-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul.elegant-list li {
+            margin-bottom: 12px;
+            position: relative;
+            padding-left: 30px;
+        }
+
+        ul.elegant-list li::before {
+            content: '✧';
+            position: absolute;
+            left: 0;
+            color: var(--primary-color);
+            font-size: 1.2em;
+        }
+
+        /* Styling untuk Tombol Unduh */
+        .download-container {
+            text-align: center;
+            background: #fffafa;
+            padding: 30px;
+            border-radius: 15px;
+            border: 1px dashed var(--primary-color);
+            margin-bottom: 40px;
+        }
+
+        .btn-group {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            color: var(--white);
+        }
+
+        .btn-creative {
+            background-color: var(--primary-color);
+            box-shadow: 0 4px 15px rgba(209, 130, 143, 0.3);
+        }
+
+        .btn-creative:hover {
+            background-color: #b86b77;
+            transform: translateY(-2px);
+        }
+
+        .btn-formal {
+            background-color: var(--btn-formal);
+            box-shadow: 0 4px 15px rgba(140, 122, 125, 0.3);
+        }
+
+        .btn-formal:hover {
+            background-color: #6d5f61;
+            transform: translateY(-2px);
+        }
+
+        .btn-instagram {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+            color: var(--white);
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: 500;
+            transition: opacity 0.3s;
+            box-shadow: 0 4px 15px rgba(220, 39, 67, 0.3);
+            margin-top: 15px;
+        }
+
+        .btn-instagram:hover {
+            opacity: 0.85;
+        }
+
+        @media (max-width: 600px) {
+            .container { padding: 30px 20px; }
+            .header h1 { font-size: 2.2em; }
+            .btn-group { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <h1>Andara Nasywa Habibie</h1>
+            <p>Traditional & Digital Visual Artist</p>
+        </div>
+
+        <div class="download-container">
+            <h2 style="margin-top: 0; font-size: 1.5em;">Unduh Resume</h2>
+            <p style="margin-bottom: 0;">Silakan unduh profil saya dalam format PDF sesuai kebutuhan Anda:</p>
+            <div class="btn-group">
+                <a href="cv-kreatif.pdf" download class="btn btn-creative">
+                    <i class="fas fa-palette"></i> CV Kreatif (Sesuai Desain Web)
+                </a>
+                <a href="cv-formal.pdf" download class="btn btn-formal">
+                    <i class="fas fa-file-alt"></i> CV Formal (Khusus Teks)
+                </a>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Tentang Saya</h2>
+            <p class="about-text">
+                Saya adalah seorang seniman visual yang penuh dedikasi. Dengan keahlian yang menjembatani seni klasik dan teknologi modern, saya mampu menciptakan karya ilustrasi yang mendetail, ekspresif, dan memikat. Baik menggoreskan kuas di atas kanvas tradisional maupun melukis di kanvas digital, saya selalu menaruh jiwa dan estetika yang tinggi dalam setiap karya yang saya hasilkan.
+            </p>
+        </div>
+
+        <div class="section">
+            <h2>Keahlian Seni</h2>
+            <div class="skills-grid">
+                <div class="skill-box">
+                    <i class="fas fa-paint-brush"></i>
+                    <h3 style="margin-top: 10px;">Seni Tradisional</h3>
+                    <p>Berpengalaman dalam menggambar dan melukis secara manual, memperhatikan detail pencahayaan, tekstur, dan komposisi warna pada kanvas fisik.</p>
+                </div>
+                <div class="skill-box">
+                    <i class="fas fa-pen-nib"></i>
+                    <h3 style="margin-top: 10px;">Seni Digital</h3>
+                    <p>Ahli dalam menciptakan ilustrasi digital, desain karakter, dan sketsa menggunakan perangkat lunak dan alat menggambar modern.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="skills-grid">
+                <div class="skill-box" style="text-align: left;">
+                    <h3 style="text-align: left; border-bottom: 1px solid var(--border-light); padding-bottom: 10px;">Pendidikan</h3>
+                    <ul class="elegant-list">
+                        <li><strong>Sekolah Menengah Atas (SMA)</strong><br>
+                        <span style="font-size: 0.9em; color: var(--text-light);">Lulus dengan nilai memuaskan</span></li>
+                    </ul>
+                </div>
+                <div class="skill-box" style="text-align: left;">
+                    <h3 style="text-align: left; border-bottom: 1px solid var(--border-light); padding-bottom: 10px;">Bahasa</h3>
+                    <ul class="elegant-list">
+                        <li><strong>Bahasa Indonesia</strong> (Native)</li>
+                        <li><strong>Bahasa Inggris</strong> (Lancar)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="section" style="text-align: center; margin-top: 50px;">
+            <h2>Lihat Karya Saya</h2>
+            <p>Sebagian besar karya seni saya dipublikasikan di Instagram. Mari terhubung!</p>
+            <a href="https://instagram.com/bunny_sweetbun" class="btn-instagram" target="_blank">
+                <i class="fab fa-instagram"></i> @bunny_sweetbun
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
